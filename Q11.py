@@ -4,12 +4,10 @@ def calculate_discounted_price(mrp, discount, age):
     if discount < 0:
         raise InvalidDiscountError("Discount percentage cannot be negative.")
     if age < 18:
-        discount += 1
-    
+        discount += 1   
     discount = mrp * (discount / 100)
     discounted_price = mrp - discount
     return discounted_price
-
 try:
     item_name=input("Enter the item name:-")
     mrp=float(input("Enter the MRP prcie of the product:-"))
@@ -19,6 +17,5 @@ try:
     print(f"The discounted price for {item_name} is: ${discounted_price:.2f}")
 except ValueError:
     print("Error: Please enter valid numerical values.")
-
 except InvalidDiscountError as e:
     print(f"Error: {e}")

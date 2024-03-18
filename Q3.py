@@ -4,7 +4,7 @@ def search(filename,Search_string):
     with open(filename,'r')as fileread:
         for line in fileread:
             for word in line.split():
-                if Search_string == word.strip():
+                if Search_string == word:
                     check =1
                     count +=1
 

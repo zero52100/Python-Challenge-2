@@ -1,5 +1,6 @@
 def sort(strings):
     sorted_strings = sorted(strings, key=len, reverse=True)
+    print(type(sorted_strings))
     return sorted_strings
 try:
     limit=int(input("Enter the number string to list :"))

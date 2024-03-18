@@ -6,7 +6,7 @@ def Secondlargest(num_list):
     return sorted_number[1]
    
 try:
-    limit=int(input("Enter the number string to list :"))
+    limit=int(input("Enter the number of  string to list :"))
     num_list=[]
     for i in range(limit):
         item=int(input(f"Enter the {i+1}th string"))

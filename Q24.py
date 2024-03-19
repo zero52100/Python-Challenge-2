@@ -27,7 +27,7 @@ while True:
 
     print(f"You chose {user_value}. Computer chose {computer_value}.")
 
-    result = g(user_value, computer_value)
+    result = game(user_value, computer_value)
     print(result)
 
     play_again = input("Do you want to play again? (yes/no): ").lower()

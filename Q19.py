@@ -10,11 +10,10 @@ class MenuItem:
 class Menu:
     def __init__(self):
         self.menu_items = []
-
     def add_item(self, item):
         self.menu_items.append(item)
 
-    def display_menu(self, category=None):
+    def display_menu(self, category):
         if not self.menu_items:
             print("No items in the menu.")
         else:
@@ -23,9 +22,8 @@ class Menu:
                 for index, item in enumerate(self.menu_items, 1):
                     if item.category == category:
                         print(f"{index}. {item}")
-            else:
-                for index, item in enumerate(self.menu_items, 1):
-                    print(f"{index}. {item}")
+            
+    print("name")
 def take_order(menu):
     order = []
     while True:

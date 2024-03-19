@@ -39,6 +39,7 @@ for i in range(total_students):
             print("Invalid input for height. Please enter a numeric value.")
 
     student = Student(name, height)
+    
     school.add_student(student)
 
 school.sort_by_height()

@@ -1,4 +1,4 @@
-def divide_num(dividend , divisor):
+def divide_num(dividend,divisor):
     try:
         result = dividend  / divisor
         print(result)
